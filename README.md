@@ -1,4 +1,13 @@
-## Hi there 👋
+## Hi, I'm Aarish 👋
+2nd year CS Undergrad.
+
+Aspiring AI+ Full Stack Engineer.
+
+## Connect with me:
+- LinkedIn: www.linkedin.com/in/aarishali949
+- Email:aliaarish949@gmail.com
+
+
 
 <!--
 **aliaarish17/aliaarish17** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
