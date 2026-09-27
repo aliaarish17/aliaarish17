@@ -19,7 +19,7 @@
 
 ---
 
-## 👋 Hey, I'm Aarish
+##  Hey, I'm Aarish
 
 I'm a **Pre-Final Year Computer Science Undergrad at NSU**, focused on building modern web applications and integrating AI into real-world products.
 
@@ -30,7 +30,7 @@ I'm a **Pre-Final Year Computer Science Undergrad at NSU**, focused on building 
 
 ---
 
-## ⚡ Tech Stack
+##  Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,html,css,tailwind,python,fastapi,mongodb,mysql,git,github,vscode&perline=8" />
