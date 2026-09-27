@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0f172a,70:1d4ed8,100:06b6d4&height=280&section=header&text=AARISH%20ALI&fontSize=60&fontColor=ffffff&fontAlignY=42&desc=AI%20%2B%20JAVASCRIPT%20FULL%20STACK&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0f172a,70:1d4ed8,100:06b6d4&height=280&section=header&text=AARISH&fontSize=60&fontColor=ffffff&fontAlignY=42&desc=AI%20%2B%20JAVASCRIPT%20FULL%20STACK&descSize=18&descAlignY=62&animation=fadeIn" width="100%"/>
 
 <br/>
 
