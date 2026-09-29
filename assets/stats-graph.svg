@@ -1,182 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="280">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B0F19" />
-      <stop offset="100%" stop-color="#0F172A" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080D1A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
-
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#818CF8" />
-      <stop offset="100%" stop-color="#34D399" />
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
     </linearGradient>
-
     <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </linearGradient>
-
     <linearGradient id="streakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#34D399" />
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
     </linearGradient>
-
-    <pattern id="graphGrid" width="40" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="1"/>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#1E293B"/>
     </pattern>
   </defs>
 
   <style>
-    .bg { fill: url(#bgGrad); rx: 16px; stroke: #1E293B; stroke-width: 1.5; }
-    
-    .head-title {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      fill: #F8FAFC;
-      letter-spacing: 1px;
-    }
-
-    .head-sub {
-      font-family: 'Fira Code', monospace;
-      font-size: 11px;
-      fill: #94A3B8;
-    }
-
-    .axis-label {
-      font-family: 'Fira Code', monospace;
-      font-size: 10px;
-      fill: #64748B;
-    }
-
-    .val-label {
-      font-family: 'Fira Code', monospace;
-      font-size: 11px;
-      font-weight: 700;
-      fill: #E2E8F0;
-    }
-
-    .streak-card {
-      fill: #0F172A;
-      stroke: url(#streakGrad);
-      stroke-width: 1.5;
-      rx: 12px;
-    }
-
-    .streak-val {
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 28px;
-      font-weight: 900;
-      fill: url(#streakGrad);
-    }
-
-    .curve-line {
-      fill: none;
-      stroke: url(#lineGrad);
-      stroke-width: 3;
-      stroke-linecap: round;
-    }
-
-    .node {
-      fill: #38BDF8;
-      stroke: #0F172A;
-      stroke-width: 2;
-    }
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', monospace; }
+    .sans { font-family: 'Segoe UI', system-ui, sans-serif; }
   </style>
 
   <!-- Background -->
-  <rect width="850" height="320" class="bg"/>
-  <rect width="850" height="320" fill="url(#graphGrid)"/>
+  <rect width="850" height="280" rx="14" fill="url(#bg)"/>
+  <rect width="850" height="280" rx="14" fill="url(#dots)"/>
+  <!-- Border -->
+  <rect width="850" height="280" rx="14" fill="none" stroke="#1E293B" stroke-width="1.5"/>
 
-  <!-- Top Title Header -->
-  <g transform="translate(30, 30)">
-    <text class="head-title">DEVELOPER TELEMETRY &amp; ACTIVITY GRAPH</text>
-    <text class="head-sub" y="18">ENGINEERING METRICS • REAL-TIME CODE VELOCITY LOG</text>
-    <line x1="0" y1="28" x2="800" y2="28" stroke="#1E293B" stroke-width="1"/>
+  <!-- Left accent -->
+  <rect x="0" y="0" width="3" height="280" rx="2" fill="url(#lineGrad)"/>
+
+  <!-- Header row -->
+  <g transform="translate(25, 28)">
+    <text class="mono" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="2">DEVELOPER TELEMETRY</text>
+    <text class="mono" font-size="10" fill="#334155" x="790" text-anchor="end">MAX STREAK ↗</text>
+    <line x1="0" y1="14" x2="790" y2="14" stroke="#1E293B" stroke-width="1"/>
   </g>
 
-  <!-- MAX STREAK SPOTLIGHT CARD (Top Right) -->
-  <g transform="translate(560, 20)">
-    <rect width="260" height="75" class="streak-card"/>
-    <text x="18" y="24" class="head-sub" fill="#38BDF8" font-weight="700">[ MAX STREAK RECORD ]</text>
-    <text x="18" y="58" class="streak-val">34 DAYS</text>
-    <rect x="170" y="34" width="75" height="22" rx="11" fill="#34D399" fill-opacity="0.15" stroke="#34D399" stroke-width="1"/>
-    <text x="207" y="49" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">PEAK 🔥</text>
+  <!-- MAX STREAK BOX -->
+  <g transform="translate(582, 20)">
+    <rect width="240" height="64" rx="10" fill="#0F172A" stroke="url(#streakGrad)" stroke-width="1.5"/>
+    <text class="mono" font-size="10" font-weight="700" fill="#94A3B8" x="16" y="22">[ MAX STREAK RECORD ]</text>
+    <text class="sans" font-size="30" font-weight="900" fill="url(#streakGrad)" x="16" y="54">34 DAYS 🔥</text>
   </g>
 
-  <!-- Curve Graph (Left Side) -->
-  <g transform="translate(30, 115)">
-    <!-- Y Gridlines -->
-    <line x1="30" y1="0" x2="500" y2="0" stroke="#1E293B" stroke-dasharray="3 3"/>
-    <line x1="30" y1="40" x2="500" y2="40" stroke="#1E293B" stroke-dasharray="3 3"/>
-    <line x1="30" y1="80" x2="500" y2="80" stroke="#1E293B" stroke-dasharray="3 3"/>
-    <line x1="30" y1="120" x2="500" y2="120" stroke="#334155" stroke-width="1"/>
+  <!-- Graph area (left) -->
+  <g transform="translate(25, 100)">
+    <!-- Grid -->
+    <line x1="35" y1="0"   x2="520" y2="0"   stroke="#1E293B" stroke-dasharray="3 4"/>
+    <line x1="35" y1="38"  x2="520" y2="38"  stroke="#1E293B" stroke-dasharray="3 4"/>
+    <line x1="35" y1="76"  x2="520" y2="76"  stroke="#1E293B" stroke-dasharray="3 4"/>
+    <line x1="35" y1="114" x2="520" y2="114" stroke="#334155" stroke-width="1"/>
 
-    <!-- Y Labels -->
-    <text x="20" y="4" class="axis-label" text-anchor="end">MAX</text>
-    <text x="20" y="44" class="axis-label" text-anchor="end">MED</text>
-    <text x="20" y="84" class="axis-label" text-anchor="end">LOW</text>
-    <text x="20" y="124" class="axis-label" text-anchor="end">0</text>
+    <!-- Y labels -->
+    <text class="mono" font-size="9" fill="#475569" x="28" y="4"   text-anchor="end">MAX</text>
+    <text class="mono" font-size="9" fill="#475569" x="28" y="42"  text-anchor="end">MED</text>
+    <text class="mono" font-size="9" fill="#475569" x="28" y="80"  text-anchor="end">LOW</text>
+    <text class="mono" font-size="9" fill="#475569" x="28" y="118" text-anchor="end">0</text>
 
-    <!-- Area Gradient Fill -->
-    <path d="M 30 100 C 90 30, 160 80, 240 15 C 320 70, 400 20, 490 10 L 490 120 L 30 120 Z" fill="url(#areaGrad)"/>
+    <!-- Area fill -->
+    <path d="M35,96 C100,55 155,78 230,18 C305,58 375,22 460,8 L460,114 L35,114 Z" fill="url(#areaGrad)"/>
+    <!-- Curve -->
+    <path d="M35,96 C100,55 155,78 230,18 C305,58 375,22 460,8" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Nodes -->
+    <circle cx="35"  cy="96" r="3.5" fill="#38BDF8" stroke="#080D1A" stroke-width="2"/>
+    <circle cx="115" cy="60" r="3.5" fill="#38BDF8" stroke="#080D1A" stroke-width="2"/>
+    <circle cx="192" cy="48" r="3.5" fill="#818CF8" stroke="#080D1A" stroke-width="2"/>
+    <circle cx="270" cy="22" r="3.5" fill="#818CF8" stroke="#080D1A" stroke-width="2"/>
+    <circle cx="345" cy="38" r="3.5" fill="#34D399" stroke="#080D1A" stroke-width="2"/>
+    <circle cx="415" cy="18" r="3.5" fill="#34D399" stroke="#080D1A" stroke-width="2"/>
+    <circle cx="460" cy="8"  r="3.5" fill="#34D399" stroke="#080D1A" stroke-width="2"/>
 
-    <!-- Smooth Curve Line -->
-    <path d="M 30 100 C 90 30, 160 80, 240 15 C 320 70, 400 20, 490 10" class="curve-line"/>
-
-    <!-- Data Nodes -->
-    <circle cx="30" cy="100" r="4" class="node"/>
-    <circle cx="110" cy="45" r="4" class="node"/>
-    <circle cx="190" cy="65" r="4" class="node"/>
-    <circle cx="270" cy="25" r="4" class="node"/>
-    <circle cx="350" cy="55" r="4" class="node"/>
-    <circle cx="420" cy="22" r="4" class="node"/>
-    <circle cx="490" cy="10" r="4" class="node"/>
-
-    <!-- X Labels -->
-    <text x="30" y="142" class="axis-label" text-anchor="middle">MON</text>
-    <text x="106" y="142" class="axis-label" text-anchor="middle">TUE</text>
-    <text x="183" y="142" class="axis-label" text-anchor="middle">WED</text>
-    <text x="260" y="142" class="axis-label" text-anchor="middle">THU</text>
-    <text x="336" y="142" class="axis-label" text-anchor="middle">FRI</text>
-    <text x="413" y="142" class="axis-label" text-anchor="middle">SAT</text>
-    <text x="490" y="142" class="axis-label" text-anchor="middle">SUN</text>
+    <!-- X labels -->
+    <text class="mono" font-size="9" fill="#475569" x="35"  y="132" text-anchor="middle">MON</text>
+    <text class="mono" font-size="9" fill="#475569" x="115" y="132" text-anchor="middle">TUE</text>
+    <text class="mono" font-size="9" fill="#475569" x="192" y="132" text-anchor="middle">WED</text>
+    <text class="mono" font-size="9" fill="#475569" x="270" y="132" text-anchor="middle">THU</text>
+    <text class="mono" font-size="9" fill="#475569" x="345" y="132" text-anchor="middle">FRI</text>
+    <text class="mono" font-size="9" fill="#475569" x="415" y="132" text-anchor="middle">SAT</text>
+    <text class="mono" font-size="9" fill="#475569" x="460" y="132" text-anchor="middle">SUN</text>
   </g>
 
-  <!-- Stack Distribution Spectrum (Right Side) -->
-  <g transform="translate(560, 120)">
-    <text class="head-title" font-size="12">[ STACK DISTRIBUTION ]</text>
+  <!-- Stack distribution (right) -->
+  <g transform="translate(582, 105)">
+    <text class="mono" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="1">[ STACK DISTRIBUTION ]</text>
 
-    <!-- JS/TS Bar -->
-    <g transform="translate(0, 20)">
-      <text class="val-label" y="12">JAVASCRIPT / TYPESCRIPT</text>
-      <text class="axis-label" x="260" y="12" text-anchor="end" fill="#38BDF8">65%</text>
-      <rect y="18" width="260" height="6" rx="3" fill="#1E293B"/>
-      <rect y="18" width="169" height="6" rx="3" fill="url(#lineGrad)"/>
+    <!-- JS/TS -->
+    <g transform="translate(0,22)">
+      <text class="mono" font-size="10" font-weight="700" fill="#E2E8F0" y="12">JAVASCRIPT / TYPESCRIPT</text>
+      <text class="mono" font-size="10" fill="#38BDF8" x="240" y="12" text-anchor="end">65%</text>
+      <rect y="18" width="240" height="5" rx="2.5" fill="#1E293B"/>
+      <rect y="18" width="156" height="5" rx="2.5" fill="url(#lineGrad)"/>
     </g>
 
-    <!-- Python Bar -->
-    <g transform="translate(0, 56)">
-      <text class="val-label" y="12">PYTHON / FASTAPI / AI</text>
-      <text class="axis-label" x="260" y="12" text-anchor="end" fill="#818CF8">20%</text>
-      <rect y="18" width="260" height="6" rx="3" fill="#1E293B"/>
-      <rect y="18" width="52" height="6" rx="3" fill="#818CF8"/>
+    <!-- Python -->
+    <g transform="translate(0,52)">
+      <text class="mono" font-size="10" font-weight="700" fill="#E2E8F0" y="12">PYTHON / FASTAPI / AI</text>
+      <text class="mono" font-size="10" fill="#818CF8" x="240" y="12" text-anchor="end">20%</text>
+      <rect y="18" width="240" height="5" rx="2.5" fill="#1E293B"/>
+      <rect y="18" width="48" height="5" rx="2.5" fill="#818CF8"/>
     </g>
 
-    <!-- React/Next Bar -->
-    <g transform="translate(0, 92)">
-      <text class="val-label" y="12">REACT.JS / NEXT.JS</text>
-      <text class="axis-label" x="260" y="12" text-anchor="end" fill="#34D399">15%</text>
-      <rect y="18" width="260" height="6" rx="3" fill="#1E293B"/>
-      <rect y="18" width="39" height="6" rx="3" fill="#34D399"/>
+    <!-- React -->
+    <g transform="translate(0,82)">
+      <text class="mono" font-size="10" font-weight="700" fill="#E2E8F0" y="12">REACT.JS / NEXT.JS</text>
+      <text class="mono" font-size="10" fill="#34D399" x="240" y="12" text-anchor="end">15%</text>
+      <rect y="18" width="240" height="5" rx="2.5" fill="#1E293B"/>
+      <rect y="18" width="36" height="5" rx="2.5" fill="#34D399"/>
     </g>
   </g>
 
-  <!-- Bottom Footer Log Line -->
-  <g transform="translate(30, 292)">
+  <!-- Footer bar -->
+  <g transform="translate(25, 256)">
     <line x1="0" y1="0" x2="800" y2="0" stroke="#1E293B" stroke-width="1"/>
-    <text x="0" y="16" class="axis-label" fill="#94A3B8">TARGET: FULL-STACK AI PRODUCTS</text>
-    <text x="400" y="16" class="axis-label" fill="#94A3B8" text-anchor="middle">METHODOLOGY: BUILD → DEBUG → SHIP</text>
-    <text x="800" y="16" class="axis-label" fill="#38BDF8" text-anchor="end">STATUS: ACTIVE LOG</text>
+    <text class="mono" font-size="9" fill="#334155" y="16">TARGET: FULL-STACK AI PRODUCTS</text>
+    <text class="mono" font-size="9" fill="#334155" x="400" y="16" text-anchor="middle">METHOD: BUILD → DEBUG → SHIP</text>
+    <text class="mono" font-size="9" fill="#38BDF8" x="800" y="16" text-anchor="end">STATUS: ACTIVE ●</text>
   </g>
 </svg>
