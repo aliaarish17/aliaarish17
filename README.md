@@ -83,6 +83,6 @@ I work at the intersection of:
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,40:1d4ed8,70:0f172a,100:020617&height=120&section=footer" width="100%"/>
 
-<sub><code>⚡ Built with precision by AARISH</code></sub>
+
 
 </div>
