@@ -44,9 +44,9 @@ I work at the intersection of:
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aliaarish17&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3fb950&icon_color=3fb950&text_color=c9d1d9&ring_color=238636&hide=stars)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aliaarish17&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3fb950&icon_color=3fb950&text_color=c9d1d9&ring_color=238636&hide=stars&cache_seconds=86400)
 
-![Longest Streak](https://streak-stats.demolab.com?user=aliaarish17&hide_border=true&background=0d1117&ring=238636&fire=238636&currStreakLabel=0d1117&currStreakNum=0d1117&sideLabels=8b949e&sideNums=c9d1d9&dates=8b949e&stroke=0d1117&hide_current_streak=true)
+![Longest Streak](https://streak-stats.demolab.com?user=aliaarish17&hide_border=true&background=0d1117&ring=238636&fire=238636&currStreakLabel=0d1117&currStreakNum=0d1117&sideLabels=8b949e&sideNums=c9d1d9&dates=0d1117&stroke=0d1117&hide_current_streak=true)
 
 </div>
 
