@@ -23,47 +23,18 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+## Hey, I'm Aarish
 
-<table>
-<tr>
-<td width="55%" valign="top">
+I'm a **Computer Science undergraduate at NSU** focused on building **AI-powered web applications** and modern full-stack systems.
 
-### 👾 About Me
+I work at the intersection of:
 
-```yaml
-name       : Aarish
-role       : AI + Full Stack Developer
-university : NSU — Pre-Final Year CS
-focus      : Intelligent Web Applications
-mantra     : Build → Debug → Ship
-```
+- AI-powered applications and LLM integration
+- Full-stack JavaScript — React, Next.js, Node.js, Express
+- Backend engineering with Python and FastAPI
+- REST APIs and automation
 
-I build **AI-powered web products** using modern JS/TS stacks and Python. I'm obsessed with clean architecture, fast iteration, and shipping things that actually work.
-
-- 🔭 Currently building **AI-integrated full-stack apps**
-- 🧠 Exploring **LLMs, FastAPI + React** workflows
-- ⚡ Philosophy: **make it work, make it right, make it fast**
-
-</td>
-<td width="45%" valign="top" align="center">
-
-<br/>
-
-```
- ╭──────────────────────────╮
- │   const aarish = {       │
- │     stack: "Full Stack", │
- │     ai: true,            │
- │     year: "Pre-Final",   │
- │     ships: "🚀 often"    │
- │   }                      │
- ╰──────────────────────────╯
-```
-
-</td>
-</tr>
-</table>
+`BUILD → DEBUG → IMPROVE → SHIP`
 
 ---
 
@@ -73,36 +44,17 @@ I build **AI-powered web products** using modern JS/TS stacks and Python. I'm ob
 
 <div align="center">
 
-<!-- Row 1: Four metric cards -->
-<table>
-<tr>
-<td align="center" width="25%">
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aliaarish17&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3fb950&icon_color=3fb950&text_color=c9d1d9&ring_color=238636&hide=stars)
 
-![Contributions](https://github-readme-stats.vercel.app/api?username=aliaarish17&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&hide=stars,commits,prs,issues,contribs&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&hide_title=true&hide_rank=true)
-
-</td>
-<td align="center" width="75%">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aliaarish17&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=1f6feb)
-
-</td>
-</tr>
-</table>
-
-<!-- Row 2: Streak stats (current + longest, no flames) -->
-![Streak](https://streak-stats.demolab.com?user=aliaarish17&theme=transparent&hide_border=true&background=0d1117&ring=1f6feb&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&sideNums=c9d1d9&dates=8b949e&stroke=0d1117)
+![Longest Streak](https://streak-stats.demolab.com?user=aliaarish17&hide_border=true&background=0d1117&ring=238636&fire=238636&currStreakLabel=0d1117&currStreakNum=0d1117&sideLabels=8b949e&sideNums=c9d1d9&dates=8b949e&stroke=0d1117&hide_current_streak=true)
 
 </div>
 
-<br/>
-
-<!-- Row 3: 2026 Contribution Calendar (actual GitHub heatmap) -->
-
-**2026 Contribution Activity**
+### Contribution Activity
 
 <div align="center">
 
-![Contribution Calendar](https://ghchart.rshah.org/1f6feb/aliaarish17)
+![Contribution Calendar](https://ghchart.rshah.org/238636/aliaarish17)
 
 </div>
 
