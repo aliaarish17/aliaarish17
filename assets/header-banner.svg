@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%" height="200">
+  <defs>
+    <linearGradient id="soberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="60%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="60%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .bg { fill: url(#soberBg); rx: 12px; }
+    .border { fill: none; stroke: url(#borderGrad); stroke-width: 1; rx: 12px; }
+    
+    .name-title {
+      font-family: 'Segoe UI', -apple-system, system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 52px;
+      fill: url(#nameGrad);
+      letter-spacing: 5px;
+    }
+
+    .sub-title {
+      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 16px;
+      fill: #38BDF8;
+      letter-spacing: 2px;
+    }
+
+    .meta-text {
+      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-size: 13px;
+      fill: #94A3B8;
+      letter-spacing: 1px;
+    }
+
+    .accent-line {
+      stroke: #38BDF8;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="846" height="196" class="bg"/>
+  <rect x="2" y="2" width="846" height="196" class="border"/>
+
+  <!-- Geometric Subtle Lines -->
+  <path d="M 650 0 L 850 200" stroke="#334155" stroke-width="0.5" stroke-opacity="0.3"/>
+  <path d="M 700 0 L 850 150" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.2"/>
+  <circle cx="750" cy="100" r="60" fill="none" stroke="#334155" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Content -->
+  <g transform="translate(50, 60)">
+    <text class="name-title" y="0">AARISH</text>
+    <line x1="0" y1="15" x2="180" y2="15" class="accent-line"/>
+    <text class="sub-title" y="42">AI + JAVASCRIPT FULL STACK DEVELOPER</text>
+    <text class="meta-text" y="68">PRE-FINAL YEAR CS UNDERGRAD @ NSU  •  BUILD → DEBUG → SHIP</text>
+  </g>
+</svg>
